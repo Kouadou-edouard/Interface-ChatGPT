@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+  font-family: 'Perpetua', sans-serif; /* Remplacez 'Arial' par la police de votre choix */
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px;
+  align-items: center; /* Centre le contenu horizontalement */
+}
+
+.message-list {
+  border: 1px;
+  
+}
+
+.message-list-container {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%; /* Assurez-vous que la liste de messages utilise toute la largeur */
+}
+
+.message-input-container {
+  margin-top: auto; /* Place le message-input en bas du conteneur */
+  width: 100%;
+  max-width: 400px; /* Limite la largeur de la zone de saisie et du bouton */
+}
+
+.message-input {
+  display: flex; /* Utilisez le modèle de boîte flexible */
+  align-items: center; /* Centre le contenu horizontalement */
+  width: 100%;
+  
+}
+
+.message-input button {
+  margin-right: 5px; /* Ajoutez une marge à droite du bouton pour l'espace visuel */
+  border-radius: 5px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  background-color: rgb(28, 69, 105);
+}
+
+.message-input input {
+  flex: 1; /* Fait en sorte que l'input utilise tout l'espace disponible restant */
+  padding: 5px;
+  border-radius: 5px;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  margin-right: 0px; /* Ajoute de l'espace entre l'icône et l'input */
+}
+
+/* styles.css */
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Utilise 100% de la hauteur de la vue */
+}
+
+.left-sidebar {
+  width: 250px; /* Largeur de la barre latérale à gauche */
+  background-color: #08080e; /* Couleur de fond de la barre latérale */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre sur le côté */
+}
+
+.left-sidebar h2 {
+  color: white;
+}
+
+.main-content {
+  flex: 1; /* Utilise tout l'espace restant */
+  padding: 20px;
+  border: 1px;
+}
+
